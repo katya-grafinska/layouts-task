@@ -35,7 +35,7 @@ li a:hover, li a:active {
 
 .likes::after {
 	content:'\2665';
-	margin-left: 15px;
+	margin-left: 5px;
 }
 
 .site_title::after {
@@ -178,16 +178,22 @@ article {
 
 .author_info {
 	display: block;
+	position: relative;
 	top: 0;
 	height: 100%;
 	width: 100%;
 	text-align: center;
-	background-color: rgba(0,0,0,0.4);
+	background-color: rgba(0,0,0,0.85);
 	color: #ccc;
 	text-shadow: none;
 	padding: 10px;
 	font-size: 0.8em;
 	box-sizing: border-box;
+}
+
+.author_status {
+  overflow: hidden;
+  max-height: 60px;
 }
 
 .article_content {
@@ -200,9 +206,17 @@ article {
 	display: block;
 }
 
-.article_content .likes, .article_content time {
+.article_content time {
 	position: absolute;
 	text-shadow: 2px 2px 5px rgba(150, 150, 150, 1);
+}
+
+.article_content .likes {
+	position: absolute;
+	background-color: rgba(0,0,0,.7);
+	border: 1px solid #fff;
+	padding: 3px 7px;
+	font-size: .8em;
 }
 
 .article_content .likes, .author_info .like {
@@ -226,6 +240,11 @@ article {
 	left: 10px;
 }
 
+.post_time {
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+}
+
 body>footer h3 {
 	font-weight: 600;
 	margin-bottom: 20px;
@@ -233,6 +252,7 @@ body>footer h3 {
 
 body>footer p {
 	color: #969696;
+	font-size: .8em;
 }
 
 body>footer nav li {
@@ -243,6 +263,10 @@ body>footer nav li {
 body>footer nav li a {
 	color: #000;
 	text-decoration: none;
+}
+
+body>footer form {
+	margin-top: 10px;
 }
 
 body>footer form input[type="email"] {
@@ -347,7 +371,7 @@ body>footer form input[type="submit"] {
 	}
 }
 
-/*Desktop*/
+/*Small Desktop*/
 
 @media screen and (min-width: 769px) {
 
@@ -383,10 +407,22 @@ body>footer form input[type="submit"] {
 
 	.author_info {
 		position: absolute;
+		opacity: 0;
+		transition: opacity .3s ease-in-out;
 	}
-	.article_content:hover + .author_info {
 
+	.author_info:hover  {
+		opacity: 1;
 	}
+
+	img.author_photo {
+		width: 40px;
+	}
+
+	p.author_status {
+    max-width: 250px;
+    margin: 0 auto;
+  }
 
 	.header_panel {
 		padding-top: 20px;
@@ -410,8 +446,18 @@ body>footer form input[type="submit"] {
 	}
 }
 
-@media (min-width: 1200px){
+@media screen and (min-width: 992px) {
 	.container {
-    width: 1170px;
+    width: 992px;
+	}
+
+	img.author_photo {
+		width: auto;
+	}
+}
+
+@media screen and (min-width: 1200px){
+	.container {
+    width: 1200px;
 	}
 }
