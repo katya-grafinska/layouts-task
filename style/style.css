@@ -283,6 +283,11 @@ body>footer form input[type="submit"] {
 
 /*Only mobile*/
 @media screen and (max-width: 768px) {
+	
+	[class^=col-] {
+		width: 100%;
+	}
+
 	#hamburger span:nth-child(1) {
   	top: 0px;
 	}
@@ -361,6 +366,15 @@ body>footer form input[type="submit"] {
 
 	body>footer form {
 		display: none;
+	}
+
+	.author_info {
+		display: none;
+		transition: all .2s ease-in-out;
+	}
+
+	.article_content:hover ~ .author_info {
+		display: block;
 	}
 }
 
