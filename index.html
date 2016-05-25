@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Black & White</title>
+	<link rel="stylesheet" href="style/reset.css">
+	<link rel="stylesheet" href="style/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+	<script>
+		$(document).ready(function(){
+			$('#hamburger').click(function(){
+				$(this).toggleClass('open');
+				$('#header_nav').slideToggle();
+			});
+
+			/*$('.article_content').hover(function() {
+				$(this).showClass('author_info')
+			})*/
+		});
+	</script>
+</head>
+<body>
+	<header>
+		<div class="container">
+			
+			<div class="header_panel clearfix">
+				<a href="#" id="logo">Black & White</a>
+				<div id="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<nav id="header_nav">
+					<ul>
+						<li><a href="#" class="active">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Shop</a></li>
+						<li><a href="#">Vacancies</a></li>
+					</ul>
+				</nav>
+			</div>
+			<h1 class="site_title">Black <span class="ampersand">&</span> White</h1>
+			<p>An Original Brand Since 1965</p>
+			<button class="read_more">Read more</button>
+		</div>
+	</header>
+	<section>
+		<div class="container">
+			<div class="row clearfix">
+				<div class="col-6">Lorem ipsum dolor sit amet, consectetur <b>adipisicing elit</b>. Fugiat, unde!</div>
+				<div class="col-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam ad blanditiis, quae possimus debitis consectetur repellendus sint facere tempore asperiores?</div>
+			</div>
+		</div>
+	</section>
+	<section class="featured_articles">
+		<div class="container">
+			<h1>Read some of our <b>featured articles</b></h1>
+			
+			<div class="row clearfix">
+				<div class="col-8">
+					<article >
+						<div class="article_content">
+							<img src="img/sample.jpg" alt="">
+							<div class="likes">172</div>
+							<time>January'15 <b>South France</b></time>
+						</div>
+						<address class="author_info">
+							<a href="" class="like">&hearts;</a>
+							<img src="img/iconmonstr-user-19-72.png" alt="" class="author_photo">
+							<p class="author_status">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, dignissimos cupiditate culpa dolore. Velit earum sint neque iure accusantium? Consequuntur?</p>
+							<p class="author_status_author">by D.Hank</p>
+							<p class="post_time">Posted on time <time datetime="2012-12-16 04:13">16-12-12 4:13</time></p>
+						</address>
+					</article>
+				</div>
+
+				<div class="col-4">
+					<article>
+						<div class="article_content">
+							<img src="img/sample2.jpg" alt="">
+							<div class="likes">212</div>
+							<time>January'15 <b>South France</b></time>
+						</div>
+						<address class="author_info">
+							<a href="" class="like">&hearts;</a>
+							<img src="img/iconmonstr-user-19-72.png" alt="" class="author_photo">
+							<p class="author_status">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam quo nemo nam, neque tempore, accusantium sapiente veritatis possimus vel odit.</p>
+							<p class="author_status_author">by D.Hank</p>
+							<p class="post_time">Posted on time <time datetime="2012-12-16 04:13">16-12-12 4:13</time></p>
+						</address>
+					</article>
+				</div>
+			</div>
+
+			<div class="row clearfix">
+				<div class="col-4">
+					<article>
+						<div class="article_content">
+							<img src="img/sample3.jpg" alt="">
+							<div class="likes">313</div>
+							<time>January'15 <b>South France</b></time>
+						</div>
+						<address class="author_info">
+							<a href="" class="like">&hearts;</a>
+							<img src="img/iconmonstr-user-19-72.png" alt="" class="author_photo">
+							<p class="author_status">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt quae molestias obcaecati consectetur architecto quisquam corporis voluptate omnis soluta reiciendis!</p>
+							<p class="author_status_author">by D.Hank</p>
+							<p class="post_time">Posted on time <time datetime="2012-12-16 04:13">16-12-12 4:13</time></p>
+						</address>
+					</article>
+				</div>
+
+				<div class="col-8">
+					<article>
+						<div class="article_content">
+							<img src="img/sample4.jpg" alt="">
+							<div class="likes">313</div>
+							<time>January'15 <b>South France</b></time>
+						</div>
+						<address class="author_info">
+							<a href="" class="like">&hearts;</a>
+							<img src="img/iconmonstr-user-19-72.png" alt="" class="author_photo">
+							<p class="author_status">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis nobis nam sapiente maxime vel reiciendis odit non, harum. Veniam, ducimus!</p>
+							<p class="author_name">by D.Hank</p>
+							<p class="post_time">Posted on time <time datetime="2012-12-16 04:13">16-12-12 4:13</time></p>
+						</address>
+					</article>
+				</div>
+			</div>
+				<form action="" name="newsletter">
+					<label for="subscribe">Subscribe to our <b>newsletter</b></label>
+					<input type="email" placeholder="Enter your email address">
+					<input type="submit" id="subscribe_articles" value="Subscribe">
+				</form>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="row clearfix">
+				<div class="col-3">
+					<h3>Black & White</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint illum tenetur assumenda veniam libero laborum itaque velit, laudantium officia minus!</p>
+				</div>
+				<div class="col-3">
+					<h3>Contact</h3>
+					<p>www.loremipsumdolar.com</p>
+					<p>182 AB Your Street Name</p>
+					<p>e-mail@loremipsum.com</p>
+					<p>+(380)96 45 07 123</p>
+				</div>
+				<div class="col-3">
+					<h3>Latest Tweet</h3>
+					<p><cite>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate nam asperiores vero, voluptas accusantium, tempore aperiam eligendi doloribus explicabo voluptates!</cite></p>
+				</div>
+				<div class="col-3">
+					<h3>Newsletter</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet praesentium ratione ab quos nisi provident.</p>
+					<form action="" name="newsletter">
+						<input type="email" placeholder="Enter your email address">
+						<input type="submit" id="subscribe_footer" value="Subscribe">
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="container footer_nav_copy">
+			<div class="row clearfix">
+				<div class="col-12">
+					<span class="copyright">&copy; 2015 Ruben Stom</span>
+					<nav id="footer_nav">
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Shop</a></li>
+							<li><a href="#">Vacancies</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
